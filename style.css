@@ -3,11 +3,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: white; /* White background */
-  color: #2e7d32; /* green text */
+  color: #2e7d32; /* Green text */
 }
 
 header {
-  background-color: #388e3c; /* Darker green for header that might be changed */
+  background-color: #388e3c; /* Dark green for header */
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -16,13 +16,13 @@ header {
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: white; /* Change the text color to white */
+  color: white; /* White text */
 }
 
 header nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: white; /* Change the link color to white may be changed into a less harmful color that is less harm on the eyes*/
+  color: white; /* White links */
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -63,7 +63,7 @@ ul {
 }
 
 ul li::before {
-  content: "🌳 "; /* TREE EMOJI FOR BULLET POINTS :D*/
+  content: "🌳 "; /* Tree emoji as bullet points */
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
