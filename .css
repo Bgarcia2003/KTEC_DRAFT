@@ -1,0 +1,108 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* White background */
+  color: #2e7d32; /* green text */
+}
+
+header {
+  background-color: #388e3c; /* Darker green for header that might be changed */
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white; /* Change the text color to white */
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white; /* Change the link color to white may be changed into a less harmful color that is less harm on the eyes*/
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #81c784; /* Light green hover effect */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 2px solid #66bb6a;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 2px 2px 12px rgba(0, 100, 0, 0.15);
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Tree bullet points */
+ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+ul li::before {
+  content: "🌳 "; /* TREE EMOJI FOR BULLET POINTS :D*/
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Buttons styled like mini trees */
+.box a, .box button {
+  display: inline-block;
+  background-color: #81c784;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(76,175,80,0.3);
+  transition: all 0.3s ease;
+}
+
+.box a:hover, .box button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Hide extra text until button clicked */
+.hidden {
+  display: none;
+}
+
+/* Responsive Grid */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
